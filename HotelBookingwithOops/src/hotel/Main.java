@@ -76,6 +76,7 @@ public class Main {
 			register = true;
 			customerid[r]=reg.registerID;
 			
+			
 			System.out.print("\nDo yo want to continue registeration? YES/NO : ");
 			String y1 = br.readLine();
 			if(y1.equalsIgnoreCase("yes"))
@@ -196,8 +197,9 @@ public class Main {
 				{
 					if(id.equalsIgnoreCase(Email[w]))
 					{
-						cus.setEmail(email2);
+						//cus.setEmail(id);
 						System.out.println("\nEmail updated");
+						reg.emailUpdate(email2, registerID);
 					}
 				}
 				

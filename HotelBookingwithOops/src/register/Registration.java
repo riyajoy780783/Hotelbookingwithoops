@@ -28,8 +28,8 @@ public class Registration {
 	{
 		
 		customer.setEmail(email);
-		//this.display(customer);
-		System.out.println("Updated Email "+customer.getEmail());
+		this.display(customer);
+		//System.out.println("Updated Email "+customer.getEmail());
 		
 	}
 }
