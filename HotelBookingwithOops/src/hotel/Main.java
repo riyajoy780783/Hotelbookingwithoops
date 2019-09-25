@@ -182,32 +182,32 @@ public class Main {
 			
 		do {
 			Customer cus = new Customer();
-			System.out.println("       Update Email");
+			System.out.println("       \nUpdate Email");
 			System.out.print("\nDo you want to update your email id? YES/NO : ");
 			String y1 = br.readLine();
 			//++registerID;
 			if(y1.equalsIgnoreCase("yes"))
 			{
-				System.out.println("Enter the current emailID");
+				System.out.print("\nEnter the current emailID : ");
 				String id=br.readLine();
-				System.out.println("Enter new email ID");
+				System.out.print("\nEnter new email ID : ");
 				String email2 = br.readLine();
 				for(int w=0;w<reg.registerID;w++)
 				{
 					if(id.equalsIgnoreCase(Email[w]))
 					{
 						cus.setEmail(email2);
-						System.out.println("Email updated");
+						System.out.println("\nEmail updated");
 					}
 				}
 				
 				
 				}
-			System.out.print("\nDo yo want to continue? YES/NO : ");
+			System.out.print("\nDo yo want to update another email? YES/NO : ");
 			String y2 = br.readLine();
 			if(y2.equalsIgnoreCase("yes"))
 			{
-				i=false;
+				i=true;;
 			}
 			else
 			{
